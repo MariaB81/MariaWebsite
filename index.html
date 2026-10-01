@@ -55,7 +55,6 @@
   .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
   .hero-inner{max-width:900px;margin:0 auto;text-align:center;position:relative}
   .hero-portrait{width:200px;height:252px;object-fit:cover;object-position:top center;margin:0 auto 28px;display:block;border-radius:14px;border:2px solid var(--gold);box-shadow:0 0 0 10px rgba(197,162,83,.08),0 18px 40px rgba(0,0,0,.35)}
-  .monogram{width:104px;height:104px;margin:0 auto 28px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;font-weight:700;color:var(--gold);letter-spacing:2px;background:rgba(197,162,83,.07);box-shadow:0 0 0 10px rgba(197,162,83,.08)}
   .hero h1{font-family:var(--serif);font-size:clamp(42px,6.5vw,68px);font-weight:700;letter-spacing:.5px;line-height:1.12;color:#fff}
   .hero-rule{width:72px;height:3px;background:var(--gold);margin:26px auto;border-radius:2px}
   .hero-tag{font-family:var(--serif);font-size:clamp(17px,2.6vw,22px);font-style:italic;color:var(--gold-light);letter-spacing:.4px}
@@ -87,6 +86,12 @@
   .interest-callout .icon{flex:none;width:46px;height:46px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:var(--serif);font-size:22px;font-style:italic}
   .interest-callout strong{color:var(--gold-light);font-family:var(--serif);font-size:18px;display:block;margin-bottom:6px;letter-spacing:.3px}
   .interest-callout p{font-size:16px;color:#d8d2c0;margin:0}
+
+  /* ---------- Intro video ---------- */
+  .video-block{margin:36px auto 0;max-width:440px;text-align:center}
+  .video-frame{border-radius:14px;overflow:hidden;border:2px solid var(--gold);box-shadow:var(--shadow);background:#000}
+  .video-frame video{display:block;width:100%;height:auto}
+  .video-caption{margin-top:12px;font-size:14.5px;color:var(--ink-soft);font-style:italic}
 
   /* ---------- Timeline cards (Education / Experience) ---------- */
   .timeline{position:relative;margin-top:6px;padding-left:34px}
@@ -164,7 +169,6 @@
     header,.hero-buttons,.hamburger{display:none!important}
     .hero{padding:40px 0;background:#fff;color:#000}
     .hero h1,.hero-tag,.hero-summary,.hero-loc{color:#000}
-    .monogram{border-color:#000;color:#000;box-shadow:none}
     .hero-portrait{box-shadow:none}
     body{background:#fff;font-size:12pt}
     section{padding:28px 0}
@@ -238,6 +242,15 @@
         <p>Multilingual legal studies candidate with experience in private law, paralegal studies, legal research, document preparation, and confidential records. More than 10 years of management and client-service experience, including team supervision, payroll, inventory, and process improvement.</p>
         <p>Brings discretion, organization, and a service-focused approach to legal and administrative work. Practice interests: immigration law and criminal law.</p>
         <p>Currently seeking paralegal, legal assistant, and compliance opportunities in the Boston area.</p>
+      </div>
+      <div class="video-block reveal">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="portrait-v2.jpg" aria-label="30-second video introduction by Maria Benloula">
+            <source src="maria-intro-30s.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-caption">Meet Maria &mdash; a 30-second introduction</p>
       </div>
       <div class="interest-callout reveal">
         <span class="icon" aria-hidden="true">&sect;</span>
