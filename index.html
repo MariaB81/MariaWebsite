@@ -54,6 +54,7 @@
   .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 45% at 78% 18%,rgba(197,162,83,.14),transparent 70%)}
   .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
   .hero-inner{max-width:900px;margin:0 auto;text-align:center;position:relative}
+  .hero-portrait{width:200px;height:252px;object-fit:cover;object-position:top center;margin:0 auto 28px;display:block;border-radius:14px;border:2px solid var(--gold);box-shadow:0 0 0 10px rgba(197,162,83,.08),0 18px 40px rgba(0,0,0,.35)}
   .monogram{width:104px;height:104px;margin:0 auto 28px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;font-weight:700;color:var(--gold);letter-spacing:2px;background:rgba(197,162,83,.07);box-shadow:0 0 0 10px rgba(197,162,83,.08)}
   .hero h1{font-family:var(--serif);font-size:clamp(42px,6.5vw,68px);font-weight:700;letter-spacing:.5px;line-height:1.12;color:#fff}
   .hero-rule{width:72px;height:3px;background:var(--gold);margin:26px auto;border-radius:2px}
@@ -164,6 +165,7 @@
     .hero{padding:40px 0;background:#fff;color:#000}
     .hero h1,.hero-tag,.hero-summary,.hero-loc{color:#000}
     .monogram{border-color:#000;color:#000;box-shadow:none}
+    .hero-portrait{box-shadow:none}
     body{background:#fff;font-size:12pt}
     section{padding:28px 0}
     .reveal{opacity:1;transform:none}
@@ -201,7 +203,7 @@
   <!-- HERO -->
   <section class="hero" aria-label="Introduction">
     <div class="hero-inner">
-      <div class="monogram" aria-hidden="true">MB</div>
+      <img class="hero-portrait" src="portrait.jpg" alt="Professional portrait of Maria Benloula">
       <h1>Maria Benloula</h1>
       <div class="hero-rule" aria-hidden="true"></div>
       <p class="hero-tag">Legal Studies &middot; Paralegal Support &middot; Administrative Operations</p>
